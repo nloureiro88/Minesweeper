@@ -87,3 +87,12 @@ table#minesweeper td {
   height: 24px;
   background-size: cover;
 }
+
+@media only screen (max-width: 800px) {
+  table#minesweeper td {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minesweeper</title>
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Unica+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+  <link rel="stylesheet" href="minesweeper.css">
+</head>
+<body>
+  <br>
+  <h1>NML Minesweeper</h1>
+
+  <br>
+  <form action="post" class="form-inline">
+    <div class="form-group">
+      <label for="size">Board size: </label>
+      <input type="range" min="5" max="50" id="size" name="size" class="form-control input-lg">
+    </div>
+    <div class="form-group">
+      <label for="diff">Difficulty level: </label>
+      <input type="range" min="3" max="33" id="diff" name="diff" class="form-control input-lg">
+    </div>
+    <div class="form-group">
+      <input type="submit" id="submit_button" value="Start!" class="btn btn-primary">
+    </div>
+  </form>
+
+  <br>
+  <h3></h3>
+
+  <table id="minesweeper">
+    <tbody>
+    </tbody>
+  </table>
+
+  <!-- Including your code -->
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

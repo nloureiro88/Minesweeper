@@ -1,0 +1,89 @@
+/* CSS classes you can use on your table td to display the relevant tile */
+body{
+  background-color: #014441;
+}
+h1, h3, form {
+  color: #ffa900;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+h1{
+  font-family: 'Monoton', cursive;
+}
+h3{
+  font-family: 'Unica One', cursive;
+}
+form .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Unica One', cursive;
+}
+form input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+form .btn {
+  background-color: #ffa900;
+  color: #014441;
+  border: none;
+}
+form .btn:hover{
+  background-color: #ffa900;
+  opacity: 0.7;
+}
+td.unopened {
+  background: url('img/unopened.svg');
+  cursor: pointer;
+}
+td.opened {
+  background: url('img/opened.svg');
+}
+td.flagged {
+  background: url('img/flag.svg');
+}
+td.question {
+  background: url('img/question.svg');
+}
+td.mine {
+  background: url('img/mine.png');
+}
+td.mine-neighbour-1 {
+  background: url('img/1.svg');
+}
+td.mine-neighbour-2 {
+  background: url('img/2.svg');
+}
+td.mine-neighbour-3 {
+  background: url('img/3.svg');
+}
+td.mine-neighbour-4 {
+  background: url('img/4.svg');
+}
+td.mine-neighbour-5 {
+  background: url('img/5.svg');
+}
+td.mine-neighbour-6 {
+  background: url('img/6.svg');
+}
+td.mine-neighbour-7 {
+  background: url('img/7.svg');
+}
+td.mine-neighbour-8 {
+  background: url('img/8.svg');
+}
+
+/* Positioning the Minesweep table and make sure the cells are square */
+table#minesweeper {
+  margin: auto;
+  margin-top: 2em;
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+table#minesweeper td {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
